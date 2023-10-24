@@ -32,5 +32,13 @@ $ curl http://localhost:8000/weather
 {"location":"동작구 신대방2동","weather_condition":"맑음","temperature":"18.4"}
 ```
 
+### Docker
+- http://localhost:9040/docs
+```bash
+$ docker build -t dj-api:0.4.0 .
+$ docker run -dit --name dj-api040 -p 9040:80 dj-api:0.4.0
+```
+
 ### ref
 - https://fastapi.tiangolo.com/ko/#_4
+- https://fastapi.tiangolo.com/ko/deployment/docker/?h=docker

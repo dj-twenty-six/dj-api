@@ -5,7 +5,10 @@ description = "DJ26 api based on fastapi"
 authors = [
     {name = "pysatellite", email = "pysatellite@gmail.com"},
 ]
-dependencies = []
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.23.2",
+]
 requires-python = ">=3.8"
 readme = "README.md"
 license = {text = "MIT"}

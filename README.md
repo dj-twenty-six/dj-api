@@ -46,6 +46,13 @@ $ flyctl launch
 Visit your newly deployed app at https://dj-api.fly.dev/
 ```
 
+### Reg Docker Hub
+- https://hub.docker.com/r/pysatellite/dj-api/tags
+```bash
+$ docker build -t pysatellite/dj-api:0.6.0 .
+$ docker push pysatellite/dj-api:0.6.0
+```
+
 ### ref
 - https://fastapi.tiangolo.com/ko/#_4
 - https://fastapi.tiangolo.com/ko/deployment/docker/?h=docker

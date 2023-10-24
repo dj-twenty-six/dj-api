@@ -39,6 +39,13 @@ $ docker build -t dj-api:0.4.0 .
 $ docker run -dit --name dj-api040 -p 9040:80 dj-api:0.4.0
 ```
 
+### Deploy fly.io
+```bash
+$ flyctl launch
+
+Visit your newly deployed app at https://dj-api.fly.dev/
+```
+
 ### ref
 - https://fastapi.tiangolo.com/ko/#_4
 - https://fastapi.tiangolo.com/ko/deployment/docker/?h=docker

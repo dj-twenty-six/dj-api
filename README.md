@@ -51,6 +51,29 @@ Visit your newly deployed app at https://dj-api.fly.dev/
 ```bash
 $ docker build -t pysatellite/dj-api:0.6.0 .
 $ docker push pysatellite/dj-api:0.6.0
+
+$ docker tag pysatellite/dj-api:0.6.0  pysatellite/dj-api:latest
+$ docker images
+REPOSITORY           TAG       IMAGE ID       CREATED          SIZE
+pysatellite/dj-api   0.6.1     29d4162e7fb5   32 minutes ago   1.04GB
+pysatellite/dj-api   latest    29d4162e7fb5   32 minutes ago   1.04GB
+
+$ docker push pysatellite/dj-api
+Using default tag: latest
+The push refers to repository [docker.io/pysatellite/dj-api]
+85ef78d095d2: Layer already exists
+5b83e684ed37: Layer already exists
+e78fcb2a5a29: Layer already exists
+aeb76cec1d43: Layer already exists
+b343d97c2c3c: Layer already exists
+70981c1da3c1: Layer already exists
+6a4ba3269682: Layer already exists
+d3de4ba9f72c: Layer already exists
+0c2d6fc19d6a: Layer already exists
+2ef3351afa6d: Layer already exists
+5cc3a4df1251: Layer already exists
+2fa37f2ee66e: Layer already exists
+latest: digest: sha256:44f4741c8340c8e2a742f739a3a0d1e1b44da5787511c842761be894e7329104 size: 2840
 ```
 
 ### ref

@@ -1,10 +1,8 @@
 [project]
 name = "dj-api"
-version = "0.5.0"
+version = "0.8.0"
 description = "DJ26 api based on fastapi"
-authors = [
-    {name = "pysatellite", email = "pysatellite@gmail.com"},
-]
+authors = [{ name = "pysatellite", email = "pysatellite@gmail.com" }]
 dependencies = [
     "fastapi>=0.104.0",
     "uvicorn[standard]>=0.23.2",
@@ -12,7 +10,7 @@ dependencies = [
 ]
 requires-python = ">=3.8"
 readme = "README.md"
-license = {text = "MIT"}
+license = { text = "MIT" }
 
 [build-system]
 requires = ["pdm-backend"]
